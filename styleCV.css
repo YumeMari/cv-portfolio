@@ -50,18 +50,24 @@ aside{
     display: flex;
     padding: 2%;
 }
+.Experiences div{
+    padding: 1%;
+    width: 30%;
+}
 .Experiences h3{
     text-decoration:underline black;
     text-align: center;
 }
 .Experiences li{
     list-style: none;
-    text-align: center;
+    padding-left: 1%;
 }
 /* Présentation */
 .presentation div{
     padding: 2%;
 }
+
+/* Loisirs */
 .blockloisir{
     display: flex ;
     justify-content: space-around;
