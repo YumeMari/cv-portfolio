@@ -1,0 +1,105 @@
+/* 
+font-family: 'Indie Flower', cursive;
+font-family: 'Caveat', cursive; 
+*/
+
+*{ 
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(-45deg, #94defd, #f7f8e1, #9c3cf6);
+    font-family: 'Roboto Slab', serif;
+}
+h1, h2, h3{
+    font-family: 'Indie Flower', cursive;    
+}
+/* header */
+hgroup{
+
+    text-align: center;
+    margin: 1%;
+    border: dotted violet;
+    border-radius:25%;
+}
+
+/* Corps total */
+.corps{
+    display: flex;
+    margin: 1% 2.5%;
+}
+.colonnegauche{
+    width: 75%;
+}
+aside{
+    width: 20%;
+}
+/*colonne gauche*/
+.colonnegauche{
+    margin-right: 1%;
+    padding: 1% 0;
+}
+.colonnegauche h2{
+    text-align: center;
+    background: aliceblue;
+    border-radius: 50%;
+}
+/* Expériences */
+.Experiences{
+    display: flex;
+    padding: 2%;
+}
+.Experiences h3{
+    text-decoration:underline black;
+    text-align: center;
+}
+.Experiences li{
+    list-style: none;
+    text-align: center;
+}
+/* Présentation */
+.presentation div{
+    padding: 2%;
+}
+.blockloisir{
+    display: flex ;
+    justify-content: space-around;
+
+}
+.blockloisir div{
+    flex-direction: column;
+    padding: 1%;    
+}
+.blockloisir h3{
+    background-color: aqua;
+    border-radius: 0 25%;
+    text-align: center;
+}
+.voyages, .realisations, .lecture{
+    width: 30%;
+}
+span{
+    font-weight: bold;
+}
+
+/* colonne droite */
+aside{
+    margin-top: 5%;
+}
+aside li{
+    list-style: none;
+}
+/* boutons up et Down */
+.UpBouton{
+    position: fixed;
+    bottom: 1%;
+    right: 4%;
+    height: 10%;
+}
+.DownBouton{
+    position: fixed;
+    bottom: 1%;
+    right: 0%;
+    height: 10%;
+}
