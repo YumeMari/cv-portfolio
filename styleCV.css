@@ -9,7 +9,7 @@ font-family: 'Caveat', cursive;
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(-45deg, #94defd, #f7f8e1, #9c3cf6);
+    background:linear-gradient(25deg, #a8d3e6, #6999f3);
     font-family: 'Roboto Slab', serif;
 }
 h1, h2, h3{
@@ -55,16 +55,52 @@ aside{
     width: 30%;
 }
 .Experiences h3{
-    text-decoration:underline black;
+    text-decoration:underline black double;
     text-align: center;
+    font-size: x-large;
 }
 .Experiences li{
     list-style: none;
     padding-left: 1%;
 }
+.Experiences span{
+    text-decoration: underline black;
+    font-weight: bold;
+}
+.boutonplus{
+    display: block;
+    text-align: center;
+    margin-bottom: 3%;      
+}
+
+/* bouton en savoir plus */
+.boutonplus a{
+    color: black;
+    padding: 1%;
+    margin: 1%;
+    text-decoration: none;
+    background: linear-gradient(-45deg, #b4e7fd, #bd9adf);
+    border-radius: 10% 5%;
+}
+.boutonplus a:hover{
+    background: linear-gradient(-45deg,  #94defd,#a86ddf);
+}
 /* Présentation */
-.presentation div{
+.presentation h2{
+    margin-bottom: 2%;
+}
+.ppresentation{
+    padding: 0 10%;
+    text-align: center;
+    font-size: x-large;
+}
+.presentation .savoirs{
+    display: flex;
     padding: 2%;
+}
+.savoirs div{
+    width: 40%;
+    margin: 5%;
 }
 
 /* Loisirs */
@@ -81,21 +117,65 @@ aside{
     background-color: aqua;
     border-radius: 0 25%;
     text-align: center;
+    margin: 3%;
 }
 .voyages, .realisations, .lecture{
     width: 30%;
+    text-align: center;
 }
-span{
+.blockloisir span{
     font-weight: bold;
 }
-
+.realisations figure{
+    padding: 2%;
+}
+.voyages div{
+    padding: 2%;
+}
 /* colonne droite */
 aside{
-    margin-top: 5%;
+    margin: 10% 5% 5% 0%;
+    text-align: center;
 }
 aside li{
     list-style: none;
 }
+/* Navigation*/
+
+.navi a:hover{
+    font-weight: bold;
+}
+.navi a{
+    color: black;
+    text-decoration: none;
+}
+.navi h2{
+    font-size: xx-large;
+}
+.navi{
+    margin-bottom: 8%;
+    border: 2px dotted rgb(255, 91, 119);
+    border-radius: 15% 0;
+    padding: 1% 0;
+}
+.autres{
+    margin-bottom: 8%;
+    border: 2px dotted rgb(255, 91, 119);
+    border-radius:0 15% ;
+    padding: 3%;
+}
+/*Contact*/
+.moi p{
+    padding-bottom: 1%;
+}
+.contact{
+    margin-top: 10%;
+}
+/* Formulaire */
+form{
+    padding: 3%;
+}
+
 /* boutons up et Down */
 .UpBouton{
     position: fixed;
@@ -106,6 +186,14 @@ aside li{
 .DownBouton{
     position: fixed;
     bottom: 1%;
-    right: 0%;
+    right: 1%;
     height: 10%;
 }
+.UpBouton:hover{
+    transform: scale(1.5, 1.5);
+}
+.DownBouton:hover{
+    transform: scale(1.5, 1.5);
+}
+
+/* footer */

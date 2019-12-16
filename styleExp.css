@@ -1,0 +1,89 @@
+/* 
+font-family: 'Indie Flower', cursive;
+font-family: 'Caveat', cursive; 
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(25deg, #a8d3e6, #e3c4ff);
+    font-family: 'Roboto Slab', serif;
+}
+h1, h2, h3{
+    font-family: 'Indie Flower', cursive;    
+}
+
+/* header */
+hgroup{
+    text-align: center;
+    margin: 1%;
+    border: dotted rgb(132, 130, 238);
+    border-radius:25%;
+}
+/* Corps général */
+.retour a{
+    padding: 1%;
+    border-radius: 15% 0;
+    background: radial-gradient(aliceblue, pink);
+}
+.retour a:hover{
+    font-weight: bold;
+}
+.corpsgeneral{
+    margin: 1% 2.5% 1% 2.5%;
+}
+.corpsgeneral li{
+    list-style: none;
+}
+.exp h1:first-child{
+    text-align: center;
+    text-decoration:underline blueviolet double;
+    margin-bottom: 2%;
+    font-size: xx-large;
+}
+/*Expérience pro*/
+section{
+    width: 90%;
+    margin: auto;
+}
+section h1{
+    text-align: center;
+    margin:1%;
+    padding: 1%;
+    font-size: xx-large;
+    text-decoration:underline rgb(116, 61, 116) double;
+}
+section article{
+    display: flex;
+    margin: 4% 0;
+    align-items: center;
+}
+section img{
+    margin: 2%;
+}
+section h2{
+    text-decoration: underline black solid;
+}
+.agentdeloisir{
+    flex-direction: row-reverse;
+}
+.service{
+    flex-direction: row-reverse;
+}
+/*Scolaire*/
+.scolaire h1{
+    text-align: center;
+    margin:1%;
+    padding: 1%;
+    font-size: xx-large;
+    text-decoration:underline rgb(116, 61, 116) double;
+}
+.scolaire p{
+    margin: 1%;
+}
+.scolaire i{
+    padding: 1%;
+}
