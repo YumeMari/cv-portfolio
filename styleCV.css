@@ -9,7 +9,7 @@ font-family: 'Caveat', cursive;
     box-sizing: border-box;
 }
 body{
-    background:linear-gradient(25deg, #a8d3e6, #6999f3);
+    background-image: url(./images/sables.jpg);
     font-family: 'Roboto Slab', serif;
 }
 h1, h2, h3{
@@ -26,6 +26,7 @@ hgroup{
 
 /* Corps total */
 .corps{
+    background-color: rgba(199, 236, 241, 0.808);
     display: flex;
     margin: 1% 2.5%;
 }
