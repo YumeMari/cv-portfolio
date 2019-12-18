@@ -3,37 +3,45 @@ font-family: 'Indie Flower', cursive;
 font-family: 'Caveat', cursive; 
 */
 
-*{
-    margin: 0;
+*{ 
+    margin:0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(25deg, #a8d3e6, #e3c4ff);
+    background-image: url(./images/sables.jpg);
     font-family: 'Roboto Slab', serif;
 }
 h1, h2, h3{
     font-family: 'Indie Flower', cursive;    
 }
-
 /* header */
 hgroup{
+
     text-align: center;
-    margin: 1%;
-    border: dotted rgb(132, 130, 238);
+    margin: 2% auto;
+    border: dotted rgb(130, 159, 238);
     border-radius:25%;
+    width: 80%;
+    background-color: rgba(83, 140, 246, 0.315);
 }
 /* Corps général */
+.retour{
+    display: flex;
+}
 .retour a{
-    padding: 1%;
+    justify-content: start;
+    align-items: baseline;
+    padding: 0.5%;
     border-radius: 15% 0;
-    background: radial-gradient(aliceblue, pink);
+    background: radial-gradient(rgb(253, 242, 194), rgb(192, 212, 255));
 }
 .retour a:hover{
     font-weight: bold;
 }
 .corpsgeneral{
     margin: 1% 2.5% 1% 2.5%;
+    background-color: rgba(255, 255, 255, 0.37);
 }
 .corpsgeneral li{
     list-style: none;

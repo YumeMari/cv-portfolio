@@ -1,6 +1,7 @@
 /* 
 font-family: 'Indie Flower', cursive;
-font-family: 'Caveat', cursive; 
+font-family: 'Caveat', cursive;
+font-family: 'Libre Baskerville', serif; 
 */
 
 *{ 
@@ -19,14 +20,16 @@ h1, h2, h3{
 hgroup{
 
     text-align: center;
-    margin: 1%;
-    border: dotted violet;
+    margin: 2% auto;
+    border: dotted rgb(130, 159, 238);
     border-radius:25%;
+    width: 80%;
+    background-color: rgba(83, 140, 246, 0.315);
 }
 
 /* Corps total */
 .corps{
-    background-color: rgba(199, 236, 241, 0.808);
+    background-color: rgba(255, 255, 255, 0.37);
     display: flex;
     margin: 1% 2.5%;
 }
@@ -60,10 +63,6 @@ aside{
     text-align: center;
     font-size: x-large;
 }
-.Experiences li{
-    list-style: none;
-    padding-left: 1%;
-}
 .Experiences span{
     text-decoration: underline black;
     font-weight: bold;
@@ -80,11 +79,11 @@ aside{
     padding: 1%;
     margin: 1%;
     text-decoration: none;
-    background: linear-gradient(-45deg, #b4e7fd, #bd9adf);
+    background: linear-gradient(-45deg, #b4e7fd, #9aa1df);
     border-radius: 10% 5%;
 }
 .boutonplus a:hover{
-    background: linear-gradient(-45deg,  #94defd,#a86ddf);
+    background: linear-gradient(-45deg,  #9aa1df,#b4e7fd);
 }
 /* Présentation */
 .presentation h2{
@@ -115,7 +114,7 @@ aside{
     padding: 1%;    
 }
 .blockloisir h3{
-    background-color: aqua;
+    background-color: rgb(145, 250, 250);
     border-radius: 0 25%;
     text-align: center;
     margin: 3%;
@@ -155,13 +154,13 @@ aside li{
 }
 .navi{
     margin-bottom: 8%;
-    border: 2px dotted rgb(255, 91, 119);
+    border: 2px dotted rgb(91, 135, 255);
     border-radius: 15% 0;
     padding: 1% 0;
 }
 .autres{
     margin-bottom: 8%;
-    border: 2px dotted rgb(255, 91, 119);
+    border: 2px dotted rgb(91, 135, 255);
     border-radius:0 15% ;
     padding: 3%;
 }
@@ -174,7 +173,24 @@ aside li{
 }
 /* Formulaire */
 form{
-    padding: 3%;
+    padding: 2%;
+}
+fieldset{
+    border:1px solid cornflowerblue;
+    border-radius: 10px;
+    background-color: rgba(86, 173, 245, 0.459);
+    padding: 5px;
+}
+legend{
+    font-family: 'Indie Flower', cursive;
+    font-size: xx-large; 
+}
+input, textarea{
+    font-family: 'Libre Baskerville', serif;
+    border : 1px solid blue;
+    border-radius: 5px;
+    background-color: rgba(100, 148, 237, 0.472);
+    padding: 2%;
 }
 
 /* boutons up et Down */
@@ -198,3 +214,55 @@ form{
 }
 
 /* footer */
+
+/* Media querries */
+
+@media (max-width:1220px){
+    .UpBouton{
+        display: none;
+    }
+    .DownBouton{
+        display : none;
+    }
+}
+@media (max-width:1100px){
+    .corps{
+        flex-direction: column;
+    }
+    .navi{
+        display:none;
+    }
+    .contact{
+        margin-top: 2%;
+        flex-wrap: wrap;
+    }
+    .colonnegauche{
+        width: 95%;
+    }
+    aside{
+        width: 75%;
+        margin: 0 auto;
+    }
+    .autres{
+        margin-bottom: 2%;
+    }
+}
+@media (max-width:730px){
+    .Experiences{
+        flex-direction: column;
+    }
+    .Experiences div{
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+@media (max-width:600px){
+    .blockloisir{
+        flex-direction: column;
+    }
+    .blockloisir div{
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+

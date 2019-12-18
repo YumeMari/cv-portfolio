@@ -9,6 +9,7 @@
 <!--Polices-->
     <link href="https://fonts.googleapis.com/css?family=Caveat|Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
 <!--Script icones-->
     <script src="https://kit.fontawesome.com/ea576b5246.js" crossorigin="anonymous"></script>
     <title>Marion DUCROCQ - Devellopeur Intégrateur Web</title>
@@ -158,23 +159,25 @@
             </div>
             <div class="contact" id="contact">
                 <h2>Contact</h2>
-                <div class="moi">
-                    <h3>Moi</h3>
-                    <p>Nom : Marion Ducrocq</p>
-                    <p>Adresse : 6 Chemin du coi, chez pépin 17380 Archingeay</p>
-                    <p>Telephone : 06.65.25.97.19</p>
-                    <p>Mail : ducrocq.marion17@gmail.com</p>
-                </div>
-                <h3>Vous</h3>
                 <form id="formulaire" action="" method="POST">
-                    <label for="nom"> Votre nom :</label><br>
-                    <input type="text" name="nom" id="nom"> <br>
-                    <label for="entreprise"> Votre entreprise</label><br>
-                    <input type="text"name="entreprise" id="entreprise"> <br>
-                    <label for="message"> Votre Message</label><br>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message ici..."></textarea><br>
-                    <input type="submit" value="Envoyer !">
-                    <input type="reset" value="Reset">
+                    <fieldset class="moi">                    
+                        <legend>Moi</legend>
+                        <p>Nom : Marion Ducrocq</p>
+                        <p>Adresse : 6 Chemin du coi, chez pépin 17380 Archingeay</p>
+                        <p>Telephone : 06.65.25.97.19</p>
+                        <p>Mail : ducrocq.marion17@gmail.com</p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Vous</legend>
+                        <label for="nom"> Votre nom :</label><br>
+                        <input type="text" name="nom" id="nom"> <br>
+                        <label for="entreprise"> Votre entreprise</label><br>
+                        <input type="text"name="entreprise" id="entreprise"> <br>
+                        <label for="message"> Votre Message</label><br>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message ici..."></textarea><br>
+                        <input type="submit" value="Envoyer !">
+                        <input type="reset" value="Reset">
+                    </fieldset>
                 </form>
             </div>
         </aside>
