@@ -14,7 +14,8 @@ body{
     font-family: 'Roboto Slab', serif;
 }
 h1, h2, h3{
-    font-family: 'Indie Flower', cursive;    
+    font-family: 'Indie Flower', cursive;
+    color: rgb(55, 55, 251);    
 }
 /* header */
 hgroup{
@@ -24,7 +25,8 @@ hgroup{
     border: dotted rgb(130, 159, 238);
     border-radius:25%;
     width: 80%;
-    background-color: rgba(83, 140, 246, 0.315);
+    background-color: rgba(83, 140, 246, 0.514);
+    color: rgb(55, 55, 251);
 }
 
 /* Corps total */
@@ -46,7 +48,7 @@ aside{
 }
 .colonnegauche h2{
     text-align: center;
-    background: aliceblue;
+    background: azure;
     border-radius: 50%;
 }
 /* Expériences */
@@ -59,9 +61,10 @@ aside{
     width: 30%;
 }
 .Experiences h3{
-    text-decoration:underline black double;
+    text-decoration:underline rgb(69, 148, 240);
     text-align: center;
     font-size: x-large;
+    color: rgb(69, 148, 240);
 }
 .Experiences span{
     text-decoration: underline black;
@@ -159,7 +162,8 @@ aside li{
     padding: 1% 0;
 }
 .autres{
-    margin-bottom: 8%;
+    margin-top: 15%;
+    margin-bottom: 10%;
     border: 2px dotted rgb(91, 135, 255);
     border-radius:0 15% ;
     padding: 3%;
@@ -214,6 +218,81 @@ input, textarea{
 }
 
 /* footer */
+/* 2EME PAGE */
+/* Corps général */
+.retour{
+    display: flex;
+}
+.retour a{
+    justify-content: start;
+    align-items: baseline;
+    padding: 0.5%;
+    border-radius: 15% 0;
+    background: radial-gradient(rgb(253, 242, 194), rgb(192, 212, 255));
+}
+.retour a:hover{
+    font-weight: bold;
+}
+.corpsgeneral{
+    margin: 1% 2.5% 1% 2.5%;
+    background-color: rgba(255, 255, 255, 0.37);
+}
+.corpsgeneral li{
+    list-style: none;
+}
+.exp h1:first-child{
+    text-align: center;
+    text-decoration:underline  rgb(69, 148, 240)t double;
+    margin-bottom: 2%;
+    font-size: xx-large;
+}
+/*Expérience pro*/
+.exppro{
+    width: 90%;
+    margin: auto;
+}
+.exppro h1{
+    text-align: center;
+    margin:1%;
+    padding: 1%;
+    font-size: xx-large;
+    text-decoration:underline  rgb(69, 148, 240) double;
+}
+.exppro article{
+    display: flex;
+    margin: 4% 0;
+    align-items: center;
+}
+.exppro img{
+    margin: 2%;
+}
+.exppro h2{
+    text-decoration: underline  rgb(69, 148, 240) solid;
+}
+.agentdeloisir{
+    flex-direction: row-reverse;
+}
+.service{
+    flex-direction: row-reverse;
+}
+/*Scolaire*/
+.scolaire {
+    width: 90%;
+    text-align: center;
+}
+.scolaire h1{
+    text-align: center;
+    margin:1%;
+    padding: 1%;
+    font-size: xx-large;
+    text-decoration:underline  rgb(69, 148, 240) double;
+}
+.scolaire p{
+    margin: 1%;
+}
+.scolaire i{
+    padding: 1%;
+}
 
 /* Media querries */
 
@@ -247,6 +326,8 @@ input, textarea{
         margin-bottom: 2%;
     }
 }
+
+
 @media (max-width:730px){
     .Experiences{
         flex-direction: column;
@@ -265,4 +346,13 @@ input, textarea{
         margin: 0 auto;
     }
 }
+/* Média queries 2eme page*/
 
+@media (max-width: 800px){
+    article img{
+        display:none;
+    }
+    .exp{
+        text-align: center;
+    }
+}
